@@ -1,0 +1,14 @@
+ControlPanels:
+{'id': 'newitem1', 'green': 4, 'red': 2, 'horn': 1, 'green-1': True, 'green-2': True, 'green-3': True, 'green-4': True, 'red-1': True, 'red-2': True, 'red-3': True, 'red-4': True, 'horn-1': True, 'horn-2': True}
+{'id': 'newitem2', 'green': 2, 'red': 2, 'horn': 2, 'green-1': True, 'green-2': True, 'green-3': True, 'green-4': True, 'red-1': True, 'red-2': True, 'red-3': True, 'red-4': True, 'horn-1': True, 'horn-2': True}
+{'id': 'newitem3', 'green': 0, 'red': 0, 'horn': 0, 'green-1': True, 'green-2': True, 'green-3': True, 'green-4': True, 'red-1': True, 'red-2': True, 'red-3': True, 'red-4': True, 'horn-1': True, 'horn-2': True}
+ControlEND
+
+TablesSTART:
+sensors = 20
+P5-01 KESZARU TAROLO
+P5-02 SPIRALFAGYASZTO KITAR
+P5-03 AMMONIA TARTALY
+P5-04 SZIVATTYU TELEP
+P5-05 SPIRALFAGYASZTO BETAR
+TablesEND
