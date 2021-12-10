@@ -1,0 +1,24 @@
+wget http://ftp.us.debian.org/debian/pool/main/libs/libseccomp/libseccomp2_2.5.1-1_armhf.deb
+
+sudo dpkg -i libseccomp2_2.5.1-1_armhf.deb
+sudo apt-get install libatlas-base-dev
+
+export PYTHONPATH="${PYTHONPATH}:/home/pi"
+export PYTHONPATH="${PYTHONPATH}:.local/bin"
+
+sudo apt install mariadb-server
+
+MYSQL PART:
+
+sudo mysql –u root –p
+CREATE USER 'pi'@'localhost' IDENTIFIED BY 'password';
+CREATE DATABASE pi_sensors;
+GRANT ALL PRIVILEGES ON *.* TO 'pi'@'localhost';
+FLUSH PRIVILEGES;
+exit;
+mysql -u pi -p pi_sensors < /home/pi/sanyi_prj/sql/new.sql
+
+change mydatabase.py:
+	USER = 'pi'
+	password = 'password' 
+	database = 'pi_sensors'
